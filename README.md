@@ -7,4 +7,7 @@ Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh.
 Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh.
 ## Windows Active Directory in a Home lab environment
 Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh.
-
+## Kali linux powerful tools
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh.
+## Digital Forensics
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh.
