@@ -39,11 +39,11 @@ HTTP GET: Serves an HTML page that displays the contents of keyboard_capture.txt
 HTTP POST: Receives keyboard data from the Python script and writes it to keyboard_capture.txt.
 Error Handling: Responds with a default message if no data is logged yet.
 #### Testing & Results
-Testing:
+##### Testing:
 
 Python Code: Run the Python script to ensure it starts capturing keystrokes and sending data to the server. Verify that the data is correctly sent every 10 seconds.
 JavaScript Server: Start the server and make sure it listens on port 8080. Test the GET request by navigating to http://localhost:8080 to ensure it displays the logged data. Test the POST request by running the Python script to check if the data is properly received and saved.
-Results:
+##### Results:
 
 The Python script successfully captures keystrokes and posts them to the server.
 The JavaScript server correctly logs the data to a file and serves it via HTTP GET requests.
