@@ -54,12 +54,11 @@ This project includes a Python keylogger that tracks keyboard inputs and sends t
    * Error Handling: Shows a default message if no data has been logged yet.
      
 #### Testing & Results
-##### Testing:
-Python Code: Run the script to ensure it captures keystrokes and sends them to the server correctly.
-JavaScript Server: Start the server and check that it listens on port 8080. Visit http://localhost:8080 to see if the data is displayed correctly and confirm that POST requests are being handled properly.
-##### Results:
-The Python script successfully sends keystrokes to the server.
-The JavaScript server correctly logs the data and displays it on the web page.
+
+* Python Code: Run the script to ensure it captures keystrokes and sends them to the server correctly.
+  
+* JavaScript Server:Start the server and check that it listens on port 8080. Visit http://localhost:8080 to see if the data is displayed correctly and confirm that POST requests are being handled properly.
+  
 #### Conclusion
 This project demonstrates how to capture and display keyboard input using a Python keylogger and a JavaScript server. The Python script handles capturing and sending data, while the JavaScript server manages data storage and display. Use this setup responsibly, as keylogging involves sensitive data.
 #### Resources
