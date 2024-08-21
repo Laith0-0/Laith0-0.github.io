@@ -14,11 +14,11 @@ Developed a network monitoring system with Splunk SIEM, Snort IDS/IPS, and PfSen
 #### Description
 This project includes a Python keylogger that tracks keyboard inputs and sends them to a server every 10 seconds. The Python script uses pynput to capture keystrokes and requests to send them to a server. The server is built with JavaScript using the express framework and saves the data to a file. It also provides a web page where you can view the captured keyboard data.
 #### Tools & Technologies Used
-##### Python: The language used for the keylogger.
+Python: The language used for the keylogger.
 pynput: To capture keyboard events.
 requests: To send data to the server.
 threading: To handle timed tasks.
-##### JavaScript: The language used for the server.
+JavaScript: The language used for the server.
 express: For setting up the web server.
 body-parser: To handle JSON data.
 fs (File System): For saving data to a file.
