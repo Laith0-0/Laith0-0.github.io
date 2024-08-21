@@ -51,7 +51,7 @@ The HTML page displays the logged keyboard data as expected.
 #### Conclusion
 The integration of the Python keylogger and JavaScript server demonstrates a basic setup for capturing and displaying keyboard input. The Python script handles the keylogging and data transmission, while the JavaScript server manages data storage and presentation. This setup provides a clear example of how to capture user input and communicate between a client-side application and a server. However, this implementation should be used with caution and only in environments where you have explicit permission, as keylogging can be sensitive and potentially harmful if misused.
 #### Resources
-David Bombal: https://www.youtube.com/watch?v=LBM3EzBXhdY&t=302s
+[David Bombal] (https://www.youtube.com/watch?v=LBM3EzBXhdY&t=302s)
 ## Access Control List (Time-based, Dynamic, Reflexive & MAC-based)
 #### Description
 #### Tools & Technologies used
