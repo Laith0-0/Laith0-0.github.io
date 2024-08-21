@@ -12,46 +12,39 @@ Developed a network monitoring system with Splunk SIEM, Snort IDS/IPS, and PfSen
 #### Resources
 ## Python keylogger
 #### Description
-The Python code implements a keylogger that captures keyboard input and sends it to a server at regular intervals. It uses the pynput library to monitor keyboard events and requests to send HTTP POST requests containing the captured text. The JavaScript code sets up a server using the express framework, which listens for HTTP POST requests and logs the keyboard data to a file. It also serves a simple HTML page to display the logged data.
+This project includes a Python keylogger that tracks keyboard inputs and sends them to a server every 10 seconds. The Python script uses pynput to capture keystrokes and requests to send them to a server. The server is built with JavaScript using the express framework and saves the data to a file. It also provides a web page where you can view the captured keyboard data.
 #### Tools & Technologies Used
-Python: A high-level programming language used for the keylogger script.
-
-pynput: A library for capturing keyboard events.
-requests: A library for making HTTP requests.
-threading: A Python module for running tasks concurrently.
-JavaScript: A programming language used for the server-side script.
-
-express: A web framework for Node.js to create the HTTP server.
-body-parser: Middleware for parsing JSON bodies of incoming requests.
-fs (File System): Node.js module for file operations.
+##### Python: The language used for the keylogger.
+pynput: To capture keyboard events.
+requests: To send data to the server.
+threading: To handle timed tasks.
+##### JavaScript: The language used for the server.
+express: For setting up the web server.
+body-parser: To handle JSON data.
+fs (File System): For saving data to a file.
 Process
 Python Keylogger:
-
-Initialization: Sets up a text variable to store captured keystrokes and defines the server’s IP address and port number.
-Key Capture: Uses pynput's keyboard.Listener to capture key presses and update the text variable accordingly.
-Data Posting: Sends the captured text to the server via a POST request every 10 seconds using the requests library.
-Exception Handling: Prints an error message if the POST request fails.
-Termination: Stops capturing when the Esc key is pressed.
+Setup: Initializes variables for storing keystrokes and defines the server’s address.
+Capture Keystrokes: Uses pynput to record key presses.
+Send Data: Posts the captured data to the server every 10 seconds.
+Error Handling: Prints a message if sending data fails.
+Stop Logging: Stops when the Esc key is pressed.
 JavaScript Server:
-
-Setup: Initializes an Express application and configures it to parse JSON request bodies.
-HTTP GET: Serves an HTML page that displays the contents of keyboard_capture.txt if it exists.
-HTTP POST: Receives keyboard data from the Python script and writes it to keyboard_capture.txt.
-Error Handling: Responds with a default message if no data is logged yet.
+Initialize: Sets up the server and configures it to read JSON data.
+Handle GET Requests: Serves a web page showing the contents of keyboard_capture.txt.
+Handle POST Requests: Receives data from the Python script and writes it to keyboard_capture.txt.
+Error Handling: Shows a default message if no data has been logged yet.
 #### Testing & Results
 ##### Testing:
-
-Python Code: Run the Python script to ensure it starts capturing keystrokes and sending data to the server. Verify that the data is correctly sent every 10 seconds.
-JavaScript Server: Start the server and make sure it listens on port 8080. Test the GET request by navigating to http://localhost:8080 to ensure it displays the logged data. Test the POST request by running the Python script to check if the data is properly received and saved.
+Python Code: Run the script to ensure it captures keystrokes and sends them to the server correctly.
+JavaScript Server: Start the server and check that it listens on port 8080. Visit http://localhost:8080 to see if the data is displayed correctly and confirm that POST requests are being handled properly.
 ##### Results:
-
-The Python script successfully captures keystrokes and posts them to the server.
-The JavaScript server correctly logs the data to a file and serves it via HTTP GET requests.
-The HTML page displays the logged keyboard data as expected.
+The Python script successfully sends keystrokes to the server.
+The JavaScript server correctly logs the data and displays it on the web page.
 #### Conclusion
-The integration of the Python keylogger and JavaScript server demonstrates a basic setup for capturing and displaying keyboard input. The Python script handles the keylogging and data transmission, while the JavaScript server manages data storage and presentation. This setup provides a clear example of how to capture user input and communicate between a client-side application and a server. However, this implementation should be used with caution and only in environments where you have explicit permission, as keylogging can be sensitive and potentially harmful if misused.
+This project demonstrates how to capture and display keyboard input using a Python keylogger and a JavaScript server. The Python script handles capturing and sending data, while the JavaScript server manages data storage and display. Use this setup responsibly, as keylogging involves sensitive data.
 #### Resources
-[David Bombal] (https://www.youtube.com/watch?v=LBM3EzBXhdY&t=302s)
+David Bombal’s YouTube Tutorial: https://www.youtube.com/watch?v=LBM3EzBXhdY&t=302s
 ## Access Control List (Time-based, Dynamic, Reflexive & MAC-based)
 #### Description
 #### Tools & Technologies used
