@@ -32,17 +32,27 @@ This project includes a Python keylogger that tracks keyboard inputs and sends t
     
 #### Process
 * Python Keylogger:
-   Setup: Initializes variables for storing keystrokes and defines the server’s address.
-   Capture Keystrokes: Uses pynput to record key presses.
-   Send Data: Posts the captured data to the server every 10 seconds.
-   Error Handling: Prints a message if sending data fails.
-   Stop Logging: Stops when the Esc key is pressed.
   
-*JavaScript Server:
-   Initialize: Sets up the server and configures it to read JSON data.
-   Handle GET Requests: Serves a web page showing the contents of keyboard_capture.txt.
-   Handle POST Requests: Receives data from the Python script and writes it to keyboard_capture.txt.
-   Error Handling: Shows a default message if no data has been logged yet.
+   * Setup: Initializes variables for storing keystrokes and defines the server’s address.
+     
+   * Capture Keystrokes: Uses pynput to record key presses.
+     
+   * Send Data: Posts the captured data to the server every 10 seconds.
+     
+   * Error Handling: Prints a message if sending data fails.
+     
+   * Stop Logging: Stops when the Esc key is pressed.
+  
+* JavaScript Server:
+  
+   * Initialize: Sets up the server and configures it to read JSON data.
+     
+   * Handle GET Requests: Serves a web page showing the contents of keyboard_capture.txt.
+     
+   * Handle POST Requests: Receives data from the Python script and writes it to keyboard_capture.txt.
+     
+   * Error Handling: Shows a default message if no data has been logged yet.
+     
 #### Testing & Results
 ##### Testing:
 Python Code: Run the script to ensure it captures keystrokes and sends them to the server correctly.
