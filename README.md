@@ -102,12 +102,12 @@ For my Access Control List Project, I developed a Time-Based Access Control List
 An ACL, or Access Control List, is fundamental in network security for controlling traffic flow by defining rules to permit or deny packets. My project took this concept further by creating a Time-Based ACL, which allows network administrators to apply access rules based on specified time periods. This added layer of control enables more granular management of network access, aligning security measures with operational needs.
 
 #### Key Features and Functionality
-  *Time-Based ACL Types:
+*Time-Based ACL Types:
 
-    * Periodic ACL: I implemented a system where access restrictions are enforced based on a recurring schedule. For example, employees' internet access can be denied during business hours (e.g., Monday to       Friday, 9 am to 5 pm) and automatically allowed outside these hours and on weekends. This ensures that network resources are used appropriately according to organizational policies.
+  * Periodic ACL: I implemented a system where access restrictions are enforced based on a recurring schedule. For example, employees' internet access can be denied during business hours (e.g., Monday to       Friday, 9 am to 5 pm) and automatically allowed outside these hours and on weekends. This ensures that network resources are used appropriately according to organizational policies.
     
-    * Absolute ACL: This feature allows for precise control over network access during specific time windows. For instance, internet access can be permitted during lunch breaks (e.g., 12 pm to 1 pm) and          automatically restricted outside this period. The absolute ACL provides flexibility for one-time or ad-hoc scenarios.
-
+  * Absolute ACL: This feature allows for precise control over network access during specific time windows. For instance, internet access can be permitted during lunch breaks (e.g., 12 pm to 1 pm) and          automatically restricted outside this period. The absolute ACL provides flexibility for one-time or ad-hoc scenarios.
+    
 #### Practical Scenarios
 Periodic Use Case: In a corporate environment, the Time-Based ACL system could be used to automatically restrict internet access during business hours while allowing it during off-hours and weekends. This setup helps maintain productivity and security by ensuring that access policies are enforced according to the company's operational schedule.
 
