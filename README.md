@@ -95,7 +95,7 @@ This project includes a Python keylogger that tracks keyboard inputs and sends t
 This project demonstrates how to capture and display keyboard input using a Python keylogger and a server. The Python script handles capturing and sending data, while the server manages data storage and display.
 #### Resources
 David Bombal’s YouTube Tutorial: <https://www.youtube.com/watch?v=LBM3EzBXhdY&t=302s>
-## Access Control List (Time-based, Dynamic, Reflexive & MAC-based)
+## Access Control List (Time-based)
 #### Description
 #### Tools & Technologies used
 #### Process
