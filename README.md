@@ -1,22 +1,28 @@
 # Laith's Portfolio
 ## About this page
 This github page is used to showcase my personal growth and progress throughout my cybersecurity journey, in which i'll be documenting my progress and steps taken to complete these projects.
-# Projects
+# Projects:
+
 ## Network Monitoring System
 #### Summary
 The Network Monitoring System (NMS) project was my graduation project for my final year at the university in which I was able to excel and develop valuebale skills in both technical and interpersonal skills, in which the projects group consisted of 3 other members, in which this project was only made possible through our collabrative efforts and applying our theoretical knowledge into practical work. 
 #### Description
 Developed a network monitoring system with Splunk SIEM, Snort IDS/IPS, and PfSense Firewall. Enabling real-time traffic analysis and intrusion detection.
 #### Tools & Technologies used
+
    * Vmware
+     
    * GNS3
+     
    * PfSense (Firewall)
+     
    * Splunk (SIEM)
+     
    * Snort (IPS & IDS)
+
 #### Process
 [Download the document](https://github.com/Laith0-0/Laith0-0.github.io/raw/main/NMS.pdf)
 #### Conclusion
-#### Resources
 ## Python keylogger
 #### Description
 This project includes a Python keylogger that tracks keyboard inputs and sends them to a server every 10 seconds. The Python script uses pynput to capture keystrokes and requests to send them to a server. The server is built with JavaScript using the express framework and saves the data to a file. It also provides a web page where you can view the captured keyboard data.
