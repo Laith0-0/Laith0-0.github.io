@@ -14,7 +14,7 @@ Developed a network monitoring system with Splunk SIEM, Snort IDS/IPS, and PfSen
    * Splunk (SIEM)
    * Snort (IPS & IDS)
 #### Process
-[Download the document](https://github.com/Laith0-0/Laith0-0.github.io/raw/main/Graduation Project Documentation Final (updated) 5.docx)
+[Download the document](https://github.com/Laith0-0/Laith0-0.github.io/raw/main/Graduation-Project-Documentation-Final-(updated)-5.docx)
 #### Conclusion
 #### Resources
 ## Python keylogger
