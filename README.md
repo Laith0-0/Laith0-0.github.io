@@ -25,10 +25,23 @@ As part of the project, we simulated an attack using a Kali Linux device connect
    * Splunk (SIEM)
      
    * Snort (IPS & IDS)
+     
+   * Site-to-site VPN
+     
+   * OSPFv2
+     
+   * PAT (Port Address Translation)
+
+   * VLAN (Virual Local Area Network) 
+     
+   * Etherchannel with LACP
+
+   * VRRP (Virtual Router Redundancy Protocol)
 
 #### Process
 Download the Project's documentation, [Here.](https://github.com/Laith0-0/Laith0-0.github.io/raw/main/NMS.pdf)
 #### Conclusion
+The Network Monitoring System (NMS) project effectively demonstrated our ability to design and implement a complex network environment using modern simulation tools and technologies. By integrating Cisco devices, pfSense, Snort, and Splunk, we created a robust system capable of real-time intrusion detection and response. The successful simulation of a TCP and UDP scan attack highlighted the system's effectiveness in detecting and notifying administrators of security threats. This project not only showcased our technical skills but also emphasized the importance of collaborative efforts and practical application of theoretical knowledge in addressing real-world cybersecurity challenges.
 ## Python keylogger
 #### Description
 This project includes a Python keylogger that tracks keyboard inputs and sends them to a server every 10 seconds. The Python script uses pynput to capture keystrokes and requests to send them to a server. The server is built with JavaScript using the express framework and saves the data to a file. It also provides a web page where you can view the captured keyboard data.
