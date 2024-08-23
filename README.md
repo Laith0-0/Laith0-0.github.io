@@ -102,7 +102,7 @@ For my Access Control List Project, I developed a Time-Based Access Control List
 An ACL, or Access Control List, is fundamental in network security for controlling traffic flow by defining rules to permit or deny packets. My project took this concept further by creating a Time-Based ACL, which allows network administrators to apply access rules based on specified time periods. This added layer of control enables more granular management of network access, aligning security measures with operational needs.
 
 #### Key Features and Functionality
-1.Time-Based ACL Types:
+1. Time-Based ACL Types:
 
   * Periodic ACL: I implemented a system where access restrictions are enforced based on a recurring schedule. For example, employees' internet access can be denied during business hours (e.g., Monday to       Friday, 9 am to 5 pm) and automatically allowed outside these hours and on weekends. This ensures that network resources are used appropriately according to organizational policies.
     
