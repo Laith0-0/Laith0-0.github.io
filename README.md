@@ -3,9 +3,16 @@
 This github page is used to showcase my personal growth and progress throughout my cybersecurity journey, in which i'll be documenting my progress and steps taken to complete these projects.
 # Projects
 ## Network Monitoring System
+#### Summary
+The Network Monitoring System (NMS) project was my graduation project for my final year at the university in which I was able to excel and develop valuebale skills in both technical and interpersonal skills, in which the projects group consisted of 3 other members, in which this project was only made possible through our collabrative efforts and applying our theoretical knowledge into practical work. 
 #### Description
 Developed a network monitoring system with Splunk SIEM, Snort IDS/IPS, and PfSense Firewall. Enabling real-time traffic analysis and intrusion detection.
 #### Tools & Technologies used
+   * Vmware
+   * GNS3
+   * PfSense (Firewall)
+   * Splunk (SIEM)
+   * Snort (IPS & IDS)
 #### Process
 #### Testing & results
 #### Conclusion
@@ -70,14 +77,14 @@ David Bombal’s YouTube Tutorial: <https://www.youtube.com/watch?v=LBM3EzBXhdY&
 #### Testing & results
 #### Conclusion
 #### Resources
-## Web application deployment with Microsoft Azure
+## Windows Active Directory in a Home lab environment
 #### Description
 #### Tools & Technologies used
 #### Process
 #### Testing & results
 #### Conclusion
 #### Resources
-## Windows Active Directory in a Home lab environment
+## Arduino (Automatic Sliding Door)
 #### Description
 #### Tools & Technologies used
 #### Process
