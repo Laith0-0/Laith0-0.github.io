@@ -1,13 +1,19 @@
 # Laith's Portfolio
 ## About this page
-This github page is used to showcase my personal growth and progress throughout my cybersecurity journey, in which i'll be documenting my progress and steps taken to complete these projects.
+This github page is used to showcase my personal growth and progress throughout my cybersecurity journey, in which i'll be documenting my progress and the steps taken to complete these projects.
 # Projects:
 
 ## Network Monitoring System
 #### Summary
-The Network Monitoring System (NMS) project was my graduation project for my final year at the university in which I was able to excel and develop valuebale skills in both technical and interpersonal skills, in which the projects group consisted of 3 other members, in which this project was only made possible through our collabrative efforts and applying our theoretical knowledge into practical work. 
+For my final year graduation project, I worked on a Network Monitoring System (NMS), which allowed me to enhance both my technical and interpersonal skills. Leading a team of three other members, I contributed significantly to the project’s success. Our collaborative efforts and application of theoretical knowledge in a practical setting were key to achieving our goals.
 #### Description
-Developed a network monitoring system with Splunk SIEM, Snort IDS/IPS, and PfSense Firewall. Enabling real-time traffic analysis and intrusion detection.
+The Network Monitoring System (NMS) project was a comprehensive final year graduation project that involved designing and implementing a simulated network environment using GNS3 and VMware. The simulation featured a network topology consisting of an HQ branch and a second branch, with intermediary devices including Cisco routers, multilayer switches, and switches.
+
+We integrated various virtual appliances into our setup, including a pfSense router/firewall for managing firewall rules and Snort for intrusion detection and prevention. Snort was configured to detect intrusion attempts in real-time by comparing network activities against a predefined ruleset. When an intrusion was detected, Snort compiled the event data and sent it to a Security Information and Event Management (SIEM) system, Splunk.
+
+Splunk played a crucial role in notifying administrators through mobile alerts that detailed the severity of the intrusion attempt. Additionally, it provided a comprehensive dashboard for reviewing and analyzing intrusion events.
+
+As part of the project, we simulated an attack using a Kali Linux device connected to a compromised branch. This device conducted TCP and UDP scans, which were detected by both pfSense and Snort. The successful detection led to a mobile notification being sent to the administrator, demonstrating the effectiveness of our monitoring and alerting system.
 #### Tools & Technologies used
 
    * Vmware
@@ -21,7 +27,7 @@ Developed a network monitoring system with Splunk SIEM, Snort IDS/IPS, and PfSen
    * Snort (IPS & IDS)
 
 #### Process
-[Download the document](https://github.com/Laith0-0/Laith0-0.github.io/raw/main/NMS.pdf)
+Download the Project's documentation, [Here.](https://github.com/Laith0-0/Laith0-0.github.io/raw/main/NMS.pdf)
 #### Conclusion
 ## Python keylogger
 #### Description
