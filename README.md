@@ -157,6 +157,6 @@ The Time-Based ACL project successfully demonstrates the application of advanced
 Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh.
 # Certificates
 ## Cisco Networking Academy: Network Security
-Cisco's certificate: [Here.](https://github.com/Laith0-0/Laith0-0.github.io/Network-Security-certificate.pdf)
+Cisco's certificate: [Here.](https://github.com/Laith0-0/Laith0-0.github.io/raw/main/Network-Security-certificate.pdf)
 ## Capture the flag (CTF)
-CTF certificate: [Here.](https://github.com/Laith0-0/Laith0-0.github.io/CTF-certificate.pdf)
+CTF certificate: [Here.](https://github.com/Laith0-0/Laith0-0.github.io/raw/main/CTF-certificate.pdf)
