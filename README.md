@@ -90,6 +90,11 @@ This project includes a Python keylogger that tracks keyboard inputs and sends t
 * Python Code: Run the script to ensure it captures keystrokes and sends them to the server correctly.
   
 * Server: Start the server and check that it listens on port 8080. Visit http://localhost:8080 to see if the data is displayed correctly and confirm that POST requests are being handled properly.
+
+#### Github Link
+
+Python keylogger git [Here.](https://github.com/Laith0-0/Python-Remote-Keylogger)
+Keylogger Server git [Here.](https://github.com/Laith0-0/Keylogger-Server)
   
 #### Conclusion
 This project demonstrates how to capture and display keyboard input using a Python keylogger and a server. The Python script handles capturing and sending data, while the server manages data storage and display.
