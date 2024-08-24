@@ -1,6 +1,7 @@
 # Laith's Portfolio
 ## About this page
 This github page is used to showcase my personal growth and progress throughout my cybersecurity journey, in which i'll be documenting my progress and the steps taken to complete these projects.
+---
 # Projects:
 
 ## Network Monitoring System
