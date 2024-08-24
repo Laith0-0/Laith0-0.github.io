@@ -93,8 +93,9 @@ This project includes a Python keylogger that tracks keyboard inputs and sends t
 
 #### Github Link
 
-Python keylogger git [Here.](https://github.com/Laith0-0/Python-Remote-Keylogger)
-Keylogger Server git [Here.](https://github.com/Laith0-0/Keylogger-Server)
+Python keylogger: [Here.](https://github.com/Laith0-0/Python-Remote-Keylogger)
+
+Keylogger Server: [Here.](https://github.com/Laith0-0/Keylogger-Server)
   
 #### Conclusion
 This project demonstrates how to capture and display keyboard input using a Python keylogger and a server. The Python script handles capturing and sending data, while the server manages data storage and display.
