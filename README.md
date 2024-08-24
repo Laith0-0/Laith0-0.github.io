@@ -146,7 +146,17 @@ The Time-Based ACL project successfully demonstrates the application of advanced
 #### Testing & results
 #### Conclusion
 #### Resources
+## SQL (oracle) Project
+#### Description
+#### Tools & Technologies used
+#### Process
+#### Testing & results
+#### Conclusion
+#### Resources
 ## Kali linux powerful tools
 Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh.
+# Certificates
+## Cisco Networking Academy: Network Security
+Cisco's certificate: [Here.](https://github.com/Laith0-0/Laith0-0.github.io/Network-Security-certificate.pdf)
 ## Capture the flag (CTF)
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh.
+CTF certificate: [Here.](https://github.com/Laith0-0/Laith0-0.github.io/CTF-certificate.pdf)
