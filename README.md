@@ -45,6 +45,9 @@ As part of the project, we simulated an attack using a Kali Linux device connect
 Download the Project's documentation: [Here.](https://github.com/Laith0-0/Laith0-0.github.io/raw/main/NMS.pdf)
 #### Conclusion
 The Network Monitoring System (NMS) project effectively demonstrated our ability to design and implement a complex network environment using modern simulation tools and technologies. By integrating Cisco devices, pfSense, Snort, and Splunk, we created a robust system capable of real-time intrusion detection and response. The successful simulation of a TCP and UDP scan attack highlighted the system's effectiveness in detecting and notifying administrators of security threats. This project not only showcased our technical skills but also emphasized the importance of collaborative efforts and practical application of theoretical knowledge in addressing real-world cybersecurity challenges.
+
+---
+
 ## Python keylogger
 #### Description
 This project includes a Python keylogger that tracks keyboard inputs and sends them to a server every 10 seconds. The Python script uses pynput to capture keystrokes and requests to send them to a server. The server is built with JavaScript using the express framework and saves the data to a file. It also provides a web page where you can view the captured keyboard data.
@@ -104,6 +107,9 @@ Keylogger Server: [Here.](https://github.com/Laith0-0/Keylogger-Server)
 This project demonstrates how to capture and display keyboard input using a Python keylogger and a server. The Python script handles capturing and sending data, while the server manages data storage and display.
 #### Resources
 David Bombal’s YouTube Tutorial: <https://www.youtube.com/watch?v=LBM3EzBXhdY&t=302s>
+
+---
+
 ## Access Control List (Time-based)
 #### Summary
 For my Access Control List Project, I developed a Time-Based Access Control List (ACL) system designed to enhance network security and manage access dynamically based on specific time periods. The core objective was to implement an advanced ACL mechanism that extends traditional packet filtering capabilities by incorporating time-based conditions.
@@ -128,6 +134,9 @@ Local Clock Limitations: Initially, relying on the local clock posed challenges,
 Download the project's documentation: [Here.](https://github.com/Laith0-0/Laith0-0.github.io/raw/main/Time-based-ACL.pdf)
 #### Conclusion
 The Time-Based ACL project successfully demonstrates the application of advanced network security principles through dynamic time-based access control. By incorporating periodic and absolute time-based rules, along with integrating NTP for accurate time synchronization, the project enhances network management and security. This approach not only improves operational efficiency but also provides a more flexible and reliable solution for managing network access.
+
+---
+
 ## Windows Active Directory in a Home lab environment
 #### Description
 #### Tools & Technologies used
@@ -135,6 +144,9 @@ The Time-Based ACL project successfully demonstrates the application of advanced
 #### Testing & results
 #### Conclusion
 #### Resources
+
+---
+
 ## Arduino (Automatic Sliding Door)
 #### Description (Overview)
 This Arduino project simulates an automatic sliding door system using a PIR (Passive Infrared) motion sensor, a micro servo, and a piezo buzzer. The system automatically opens the door when motion is detected and closes it after a period of inactivity. The piezo buzzer adds a realistic touch by playing different sounds when the door opens and closes.
@@ -182,6 +194,9 @@ Code used for the arduino project [Here.](https://github.com/Laith0-0/Laith0-0.g
 To view project on Tinkercad: [Here.](https://www.tinkercad.com/things/kansXmJt5NQ-automatic-door-with-sound?sharecode=MAR2DK-Sxukust6AfAhQ0AVWgpkg0U1nfTXoc7esreY)
 #### Conclusion
 This project provides a functional and interactive demonstration of automated systems, combining motion detection, mechanical actuation, and sound effects for a realistic sliding door simulation.
+
+---
+
 ## Digital Forensics
 #### Description
 #### Tools & Technologies used
@@ -189,6 +204,9 @@ This project provides a functional and interactive demonstration of automated sy
 #### Testing & results
 #### Conclusion
 #### Resources
+
+---
+
 ## SQL (oracle) Project
 #### Description
 #### Tools & Technologies used
@@ -196,8 +214,14 @@ This project provides a functional and interactive demonstration of automated sy
 #### Testing & results
 #### Conclusion
 #### Resources
+
+---
+
 ## Kali linux powerful tools
 Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh.
+
+---
+
 # Certificates
 ## Cisco Networking Academy: Network Security
 Cisco's certificate: [Here.](https://github.com/Laith0-0/Laith0-0.github.io/raw/main/Network-Security-certificate.pdf)
