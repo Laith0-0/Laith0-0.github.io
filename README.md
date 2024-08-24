@@ -133,12 +133,52 @@ The Time-Based ACL project successfully demonstrates the application of advanced
 #### Conclusion
 #### Resources
 ## Arduino (Automatic Sliding Door)
-#### Description
-#### Tools & Technologies used
-#### Process
-#### Testing & results
+#### Description (Overview)
+This Arduino project simulates an automatic sliding door system using a PIR (Passive Infrared) motion sensor, a micro servo, and a piezo buzzer. The system automatically opens the door when motion is detected and closes it after a period of inactivity. The piezo buzzer adds a realistic touch by playing different sounds when the door opens and closes.
+#### components used
+
+  * Arduino Uno: The central microcontroller to handle the logic and control the components.
+    
+  * PIR Motion Sensor: Detects motion in the vicinity.
+    
+  * Micro Servo Motor: Simulates the sliding door's movement.
+    
+  * Piezo Buzzer: Produces sound effects for opening and closing actions.
+    
+  * Breadboard and Jumper Wires: For connecting the components.
+
+#### Circuit Diagram
+
+  * PIR Sensor: Connect the VCC pin to 5V on the Arduino, GND pin to GND, and the OUT pin to a digital input pin (pin 7).
+    
+  * Piezo Buzzer: Connect one pin to a digital output pin (pin 8) and the other pin to GND.
+    
+  * Micro Servo: Connect the power pin to the 5V on the Arduino, ground pin (black or brown) to GND, and the signal pin to a PWM-enabled digital pin (pin 9).
+
+#### Source Code
+Code used for the arduino project [Here.](https://github.com/Laith0-0/Laith0-0.github.io/raw/main/Arduino-sliding-door.pdf)
+#### Code explaination
+
+  * Initialization: Set up pins for the PIR sensor, servo, and piezo buzzer.
+    
+  * Motion Detection: Continuously check the PIR sensor’s output. If motion is detected, initiate the door opening sequence.
+    
+  * Servo Control: Move the servo to the horizontal position (90 degrees) to simulate the door opening and to the vertical position (0 degrees) to simulate      the door closing.
+    
+  * Sound Effects: Play different sounds using the piezo buzzer when the door opens and closes.
+    
+#### How it works
+
+  * Motion Detection: When the PIR sensor detects motion, the Arduino triggers the servo to move to the horizontal position, simulating the door opening,        and plays a distinct sound via the piezo buzzer.
+    
+  * Door Movement: The servo motor’s position changes from vertical (closed) to horizontal (open) to visually simulate the sliding action.
+    
+  * Sound Effects: The piezo buzzer emits a tone when the door opens and another tone when it closes, enhancing the realism of the simulation.
+    
+#### Link to project
+To view project on Tinkercad: [Here.](https://www.tinkercad.com/things/kansXmJt5NQ-automatic-door-with-sound?sharecode=MAR2DK-Sxukust6AfAhQ0AVWgpkg0U1nfTXoc7esreY)
 #### Conclusion
-#### Resources
+This project provides a functional and interactive demonstration of automated systems, combining motion detection, mechanical actuation, and sound effects for a realistic sliding door simulation.
 ## Digital Forensics
 #### Description
 #### Tools & Technologies used
