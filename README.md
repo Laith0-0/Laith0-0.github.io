@@ -137,16 +137,6 @@ The Time-Based ACL project successfully demonstrates the application of advanced
 
 ---
 
-## Windows Active Directory in a Home lab environment
-#### Description
-#### Tools & Technologies used
-#### Process
-#### Testing & results
-#### Conclusion
-#### Resources
-
----
-
 ## Arduino (Automatic Sliding Door)
 #### Description (Overview)
 This Arduino project simulates an automatic sliding door system using a PIR (Passive Infrared) motion sensor, a micro servo, and a piezo buzzer. The system automatically opens the door when motion is detected and closes it after a period of inactivity. The piezo buzzer adds a realistic touch by playing different sounds when the door opens and closes.
@@ -197,32 +187,9 @@ This project provides a functional and interactive demonstration of automated sy
 
 ---
 
-## Digital Forensics
-#### Description
-#### Tools & Technologies used
-#### Process
-#### Testing & results
-#### Conclusion
-#### Resources
-
----
-
-## SQL (oracle) Project
-#### Description
-#### Tools & Technologies used
-#### Process
-#### Testing & results
-#### Conclusion
-#### Resources
-
----
-
-## Kali linux powerful tools
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh.
-
----
-
 # Certificates
+## Google Cybersecurity Certificate: Foundations of cybersecurity
+Googles certificate: [Here.](https://github.com/Laith0-0/Laith0-0.github.io/raw/main/Google-Foundations-of-cybersecurity-cert.pdf)
 ## Cisco Networking Academy: Network Security
 Cisco's certificate: [Here.](https://github.com/Laith0-0/Laith0-0.github.io/raw/main/Network-Security-certificate.pdf)
 ## Capture the flag (CTF)
