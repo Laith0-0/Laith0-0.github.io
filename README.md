@@ -48,6 +48,91 @@ The Network Monitoring System (NMS) project effectively demonstrated our ability
 
 ---
 
+## Windows Active Directory in a Home lab environment
+#### Description
+
+In this project, I set up Windows Active Directory in a home lab using Windows Server 2019 and Windows 10, both running on VirtualBox. The main goal was to create an Active Directory (AD) domain, implement Group Policies, and see how these policies affected client machines within the domain. I specifically focused on configuring a policy to disable the Recycle Bin and making sure it was properly applied to users in the domain.
+
+#### Tools & Technologies used
+
+  * Windows Server 2019: Used as the Domain Controller.
+    
+  * Windows 10: Used as the client machine.
+    
+  * VirtualBox: Virtualization software for creating and managing virtual machines.
+    
+  * Static IP Addresses: Assigned to both the domain controller and client machine to ensure stable network communication.
+    
+#### Process
+
+1. Prepare the Environment:
+
+     * I started by installing VirtualBox and setting up two virtual machines: one for Windows Server 2019 and one for Windows 10.
+
+     * allocated 2 CPUs, 4 GB of RAM, and 40 GB of HDD space for each VM.
+       
+     * Configured the virtual network to ensure the VMs could communicate with each other.
+       
+2. Install Windows Server 2019:
+   
+      * Installed Windows Server 2019 on the VM designated as the Domain Controller.
+        
+      * Assigned a static IP address (e.g., 192.168.1.10) and configured the network settings.
+
+3. Configure the Domain Controller:
+
+      * Renamed the server to DC01 and updated Windows Server 2019 to the latest patches.
+        
+      * Opened Server Manager, added the "Active Directory Domain Services" role, and promoted the server to a Domain Controller.
+        
+      * Created a new forest with the domain name home.lab during the promotion process.
+        
+      * Set the Directory Services Restore Mode (DSRM) password and completed the setup.
+
+4. Set Up Windows 10 Client:
+
+    * Installed Windows 10 on the second VM.
+      
+    * Assigned a static IP address (e.g., 192.168.1.20) and joined it to the home.lab domain.
+      
+    * Logged in with domain credentials to verify that the domain join was successful.
+
+5. Implement Group Policies:
+
+    * Opened the Group Policy Management Console (GPMC) on the Domain Controller.
+      
+    * Created a new Group Policy Object (GPO) called "Disable Recycle Bin."
+      
+    * Edited the GPO to navigate to User Configuration > Administrative Templates > Windows Components > File Explorer, and enabled the policy to disable the Recycle Bin.
+      
+    * Linked the GPO to the default domain policy.
+      
+6. Apply and Test Policies:
+
+    * On the Windows 10 client, I ran the command gpupdate /force to apply the new Group Policy settings immediately.
+      
+    * Checked the client machine to confirm that the Recycle Bin icon was no longer visible on the desktop.
+      
+#### Testing & results
+
+1. Domain Join Verification:
+
+    * The Windows 10 machine joined the home.lab domain without any issues.
+      
+    * Domain user accounts were able to log in and access resources as expected.
+      
+2. Group Policy Application:
+
+    * The "Disable Recycle Bin" policy was successfully applied. After running gpupdate /force, the Recycle Bin icon disappeared from the Windows 10 desktop.
+      
+    * Verified the policy application using the rsop.msc command and confirmed it was listed correctly under User Configuration > Administrative Templates > Windows Components > File Explorer.
+      
+#### Conclusion
+
+Setting up Active Directory with Windows Server 2019 and Windows 10 on VirtualBox was a great hands-on experience with directory services and Group Policy management. By configuring a policy to disable the Recycle Bin and applying it to domain users, I effectively managed and enforced policies across a networked environment. This project provided a solid foundation for further exploring Active Directory features and administration.
+
+---
+
 ## Python keylogger
 #### Description
 This project includes a Python keylogger that tracks keyboard inputs and sends them to a server every 10 seconds. The Python script uses pynput to capture keystrokes and requests to send them to a server. The server is built with JavaScript using the express framework and saves the data to a file. It also provides a web page where you can view the captured keyboard data.
@@ -184,6 +269,203 @@ Code used for the arduino project [Here.](https://github.com/Laith0-0/Laith0-0.g
 To view project on Tinkercad: [Here.](https://www.tinkercad.com/things/kansXmJt5NQ-automatic-door-with-sound?sharecode=MAR2DK-Sxukust6AfAhQ0AVWgpkg0U1nfTXoc7esreY)
 #### Conclusion
 This project provides a functional and interactive demonstration of automated systems, combining motion detection, mechanical actuation, and sound effects for a realistic sliding door simulation.
+
+---
+
+# Digital Forensics Projects
+
+## Hashing
+
+#### Description
+This project focused on verifying the integrity of digital files by calculating and comparing their hash values. Hashing ensures that files have not been altered or tampered with, which is crucial for maintaining the integrity of digital evidence in forensic investigations.
+
+#### Tools & Technologies Used
+- **Hash Calculation Software**: HashCalc for generating hash values.
+- **File Hash Database**: To compare and validate hash values against known good values.
+
+#### Process
+1. **Generate Hash Values**: Utilized hashing algorithm MD5 to compute the hash values for each file. This provides a unique fingerprint for the files.
+2. **Compare Hashes**: Compared the generated hash values with previously known good values to ensure that the files have not been altered.
+3. **Document Results**: Recorded the hash values and compared them with expected results. Noted any discrepancies if the values did not match.
+
+#### Testing & Results
+- **Integrity Check**: All calculated hash values matched their corresponding known good values, confirming that the files were intact and unaltered.
+- **Outcome**: Verified that no changes had been made to the files, ensuring their integrity.
+
+#### Conclusion
+Hashing is a fundamental method for verifying file integrity. This project demonstrated the effectiveness of hashing algorithms in ensuring that digital evidence remains unchanged throughout an investigation.
+
+## File Signature Analysis
+
+#### Description
+This project involved analyzing file signatures to verify file authenticity and detect any anomalies or tampering. File signatures, found in the header and footer of files, help to identify file types and validate their integrity.
+
+#### Tools & Technologies Used
+- **WinHex**: A hex editor used to inspect file signatures.
+- **File Signature Database**: For cross-referencing file signatures with known values.
+
+#### Process
+1. **Open Files in WinHex**: Loaded each file into WinHex to view its raw hex data.
+2. **Inspect File Signatures**: Analyzed the header and footer sections of each file to identify its signature.
+3. **Compare Signatures**: Compared the identified signatures with known signatures to verify file authenticity and detect any discrepancies.
+
+#### Testing & Results
+- **Signature Verification**: Successfully matched file signatures with their expected values, confirming the authenticity of the files.
+- **Outcome**: Ensured that the files were genuine and had not been tampered with.
+
+#### Conclusion
+File signature analysis is essential for verifying the authenticity and type of files. This project successfully demonstrated how to use signature analysis to ensure file integrity.
+
+## Software Write Blocking
+
+#### Description
+The aim of this project was to prevent any modifications to digital evidence by disabling write access to USB devices through Windows Registry settings. This is crucial for preserving the integrity of evidence during forensic investigations.
+
+#### Tools & Technologies Used
+- **Windows Registry Editor**: For configuring write-blocking settings.
+- **USB Write Blocker Settings**: Registry keys that control write access to USB devices.
+
+#### Process
+1. **Access Windows Registry**: Opened the Registry Editor (`regedit`) on the Windows system.
+2. **Modify Registry Keys**: Edited specific registry keys to disable write access to USB devices. This prevents any data from being written to USB drives connected to the system.
+3. **Verify Write Blocking**: Tested the configuration by connecting a USB device and verifying that no data could be written.
+
+#### Testing & Results
+- **Write Blocking Verification**: Successfully prevented modifications to data on USB devices, ensuring that no changes could be made.
+- **Outcome**: Maintained the integrity of digital evidence by effectively blocking write operations.
+
+#### Conclusion
+Using Windows Registry settings to disable write access is an effective method for protecting digital evidence from being altered. This project demonstrated how to implement and verify write-blocking measures.
+
+## Creating Forensic Images
+
+#### Description
+This project involved creating exact copies of digital evidence using FTK Imager, which is essential for preserving the integrity of the data. Forensic imaging creates a bit-by-bit copy of the data, ensuring that the original evidence remains unaltered.
+
+#### Tools & Technologies Used
+- **FTK Imager**: Software used for creating forensic images.
+- **E01 Format**: A widely used format for forensic imaging.
+
+#### Process
+1. **Launch FTK Imager**: Started FTK Imager and selected the option to create a forensic image.
+2. **Select Source**: Chose the files or drives to be imaged.
+3. **Create Image**: Configured imaging options and created an E01 forensic image. This image is an exact replica of the original data.
+4. **Verify Image**: Checked the integrity of the created image by comparing hash values to ensure it was an exact copy of the original data.
+
+#### Testing & Results
+- **Image Verification**: Successfully created and verified forensic images with no discrepancies between the original data and the image.
+- **Outcome**: Produced reliable forensic images for further analysis.
+
+#### Conclusion
+Creating forensic images with FTK Imager is critical for preserving digital evidence. This project demonstrated successful imaging and verification of data integrity.
+
+## File Carving (Manually)
+
+#### Description
+This project focused on manually searching for and recovering hidden or deleted files within forensic images using FTK Imager. File carving can help recover data that is not immediately visible or accessible.
+
+#### Tools & Technologies Used
+- **FTK Imager**: For manual file carving and data extraction.
+- **File Carving Techniques**: Methods used to locate hidden files within a forensic image.
+
+#### Process
+1. **Open FTK Imager**: Loaded the forensic image into FTK Imager.
+2. **Manually Search for Hidden Files**: Performed a detailed manual search for hidden or deleted files by examining file structures and data blocks.
+3. **Extract Files**: Successfully recovered a hidden image and a PDF document by identifying data patterns and file signatures.
+
+#### Testing & Results
+- **Hidden File Discovery**: Successfully located and extracted hidden files, including an image and a PDF document.
+- **Outcome**: Demonstrated the ability to manually recover hidden data from forensic images.
+
+#### Conclusion
+Manual file carving is an effective technique for recovering hidden or deleted files. This project showcased the process and success of manually locating and extracting concealed data.
+
+## File Carving (Automatically)
+
+#### Description
+In this project, I used Carver Recovery for automatic file carving, which simplifies the process of recovering hidden or deleted files from forensic images. Automatic carving tools can quickly identify and recover files without manual intervention.
+
+#### Tools & Technologies Used
+- **Carver Recovery**: Tool for automatic file carving and recovery.
+- **Carver Audit Reports**: Provides detailed reports on recovered files.
+
+#### Process
+1. **Run Carver Recovery**: Loaded the forensic image into Carver Recovery.
+2. **Automatic File Carving**: Utilized the tool’s automatic file carving features to search for and recover hidden or deleted files.
+3. **Generate Audit Report**: Produced an audit report detailing the recovered files and their attributes.
+
+#### Testing & Results
+- **File Carving and Reporting**: Successfully recovered hidden files and generated a comprehensive audit report.
+- **Outcome**: Provided detailed information on the recovered files, demonstrating the efficiency of automatic file carving.
+
+#### Conclusion
+Automatic file carving with tools like Carver Recovery streamlines the process of recovering hidden files. This project effectively showcased the tool’s capability to recover data and produce detailed reports.
+
+## File System Identification
+
+#### Description
+This project involved identifying and analyzing the file system used in a forensic image using SleuthKit. Understanding the file system is essential for interpreting file structures and conducting thorough forensic analysis.
+
+#### Tools & Technologies Used
+- **SleuthKit**: For file system identification and analysis.
+- **File System Analysis**: Techniques for understanding file system structures and contents.
+
+#### Process
+1. **Open Forensic Image in SleuthKit**: Loaded the forensic image into SleuthKit.
+2. **Identify File System**: Analyzed the file system’s structure to determine its type (e.g., NTFS, FAT32).
+3. **Investigate File System**: Conducted a detailed analysis of the file system to understand its layout and contents.
+
+#### Testing & Results
+- **File System Identification**: Successfully identified the file system type and structure.
+- **Outcome**: Gained valuable insights into the file system used, facilitating further analysis.
+
+#### Conclusion
+File system identification with SleuthKit is crucial for forensic investigations. This project demonstrated successful identification and analysis of file systems within forensic images.
+
+## File Analysis
+
+#### Description
+This project involved analyzing file metadata to gather information about files and their origin. Metadata analysis can reveal details such as file creation, modification dates, and location information.
+
+#### Tools & Technologies Used
+- **Exif Reader**: Tool for analyzing image metadata.
+- **Google Maps**: For cross-referencing geographical location data.
+
+#### Process
+1. **Analyze Image Metadata with Exif Reader**: Loaded the image into Exif Reader to extract metadata, including GPS coordinates.
+2. **Determine Location**: Used the extracted GPS data to find the geographical location on Google Maps.
+3. **Verify Information**: Cross-referenced the location data to ensure accuracy.
+
+#### Testing & Results
+- **Location Determination**: Successfully identified the geographical location where the image was taken.
+- **Outcome**: Provided additional context for the image, useful for understanding its origin.
+
+#### Conclusion
+Exif Reader and Google Maps are effective tools for analyzing image metadata and determining location. This project demonstrated how to use these tools to gain valuable contextual information.
+
+## Artifacts in the Registry
+
+#### Description
+This project involved using Regripper to analyze Windows registry artifacts to uncover hidden user activities and system events. Registry artifacts can provide detailed information about user actions and system changes.
+
+#### Tools & Technologies Used
+- **Regripper**: Tool for extracting and analyzing Windows registry data.
+- **Windows 10 Virtual Machine**: Platform used for analyzing registry artifacts.
+
+#### Process
+1. **Run Regripper**: Loaded the Windows registry hive into Regripper.
+2. **Extract Artifacts**: Used Regripper to extract and analyze registry data related to user activities and system events.
+3. **Review Findings**: Examined the output for evidence of hidden or deleted activities.
+
+#### Testing & Results
+- **Artifact Extraction**: Successfully extracted and analyzed registry artifacts to reveal hidden user activities.
+- **Outcome**: Provided insights into user behavior and system changes, aiding forensic investigations.
+
+#### Conclusion
+Regripper is a powerful tool for analyzing Windows registry artifacts. This project demonstrated its effectiveness in uncovering hidden user activities and system events.
+
+## Resource
+Digital Forensics Workbook Data Sets: [Here.](https://www.digitalforensicsworkbook.com/data-sets)
 
 ---
 
