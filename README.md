@@ -272,7 +272,7 @@ This project provides a functional and interactive demonstration of automated sy
 
 ---
 
-# Digital Forensics Projects
+## Digital Forensics Projects
 
 ## Hashing
 
