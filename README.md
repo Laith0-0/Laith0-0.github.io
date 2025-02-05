@@ -470,7 +470,7 @@ David Bombal’s YouTube Tutorial: <https://www.youtube.com/watch?v=LBM3EzBXhdY&
 ---
 
 # Certificates
-## Google Cybersecurity Certificate: Foundations of cybersecurity
+## Google Cybersecurity Certificate:
 Googles certificate: [Here.](https://github.com/Laith0-0/Laith0-0.github.io/raw/main/Google-cybersecurity-cert.pdf)
 ## Cisco Networking Academy: Network Security
 Cisco's certificate: [Here.](https://github.com/Laith0-0/Laith0-0.github.io/raw/main/Network-Security-certificate.pdf)
